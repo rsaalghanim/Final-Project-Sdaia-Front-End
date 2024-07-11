@@ -1,0 +1,43 @@
+/* app.component.css */
+
+.header {
+    background-color: #f8f9fa;
+    padding: 50px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.tab-nav {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-nav a {
+    padding: 10px 20px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: #007bff;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.tab-nav a:hover {
+    background-color: #f1f1f1;
+}
+
+.tab-nav a.active {
+    background-color: #fff;
+    border-color: #ccc #ccc #fff;
+    border-radius: 4px 4px 0 0;
+    font-weight: bold;
+}
+
+.tab-nav a.login-tab {
+    margin-left: auto; /* Pushes the login tab to the right */
+}

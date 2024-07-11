@@ -1,0 +1,171 @@
+/*table {*/
+/*    width: 100%;*/
+/*    background-color:darkseagreen;*/
+/*    border-collapse: collapse;*/
+/*    margin: 20px 0;*/
+/*    font-size: 18px;*/
+/*    text-align: left;*/
+/*}*/
+
+/*th, td {*/
+/*    padding: 12px 15px;*/
+/*    border: 1px solid #ddd;*/
+/*}*/
+
+/*thead {*/
+/*    background-color: #527e6c;*/
+/*}*/
+
+/*tr:nth-child(even) {*/
+/*    background-color: #f9f9f9;*/
+/*}*/
+
+/*tr:hover {*/
+/*    background-color: #f1f1f1;*/
+/*}*/
+/*table {*/
+/*    width: 100%;*/
+/*    background-color:darkseagreen;*/
+/*    border-collapse: collapse;*/
+/*    margin: 20px 0;*/
+/*    font-size: 18px;*/
+/*    text-align: left;*/
+/*}*/
+
+/*th, td {*/
+/*    padding: 12px 15px;*/
+/*    border: 1px solid #ddd;*/
+/*}*/
+
+/*thead {*/
+/*    background-color: #527e6c;*/
+/*}*/
+
+/*tr:nth-child(even) {*/
+/*    background-color: #f9f9f9;*/
+/*}*/
+
+/*tr:hover {*/
+/*    background-color: #f1f1f1;*/
+/*}*/
+
+
+/*!* doctors.component.css *!*/
+
+/*.search-container {*/
+/*    margin: 20px 0;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.search-container input {*/
+/*    padding: 10px;*/
+/*    font-size: 16px;*/
+/*    border: 1px solid #ccc;*/
+/*    border-radius: 4px;*/
+/*    width: 200px;*/
+/*    margin-right: 10px;*/
+/*}*/
+
+/*.search-container button {*/
+/*    padding: 10px 20px;*/
+/*    font-size: 16px;*/
+/*    color: #fff;*/
+/*    background-color: #527e6c;*/
+/*    border: none;*/
+/*    border-radius: 4px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.search-container button:hover {*/
+/*    background-color: #0056b3;*/
+/*}*/
+
+
+body, table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Table container */
+.table-container {
+    margin-top: 20px;
+}
+
+/* Basic table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc; /* Light gray border around the table */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    background-color: #fff; /* White background */
+}
+
+/* Table header */
+th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+    border: 1px solid #ddd; /* Light border around header cells */
+    padding: 12px; /* Padding inside header cells */
+    text-align: left; /* Left-align text in headers */
+    color: #333; /* Dark text color */
+}
+
+/* Table cells */
+td {
+    border: 1px solid #ddd; /* Light border around cells */
+    padding: 12px; /* Padding inside cells */
+}
+
+/* Alternating row background colors */
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray background for even rows */
+}
+
+/* Hover effect on rows */
+tr:hover {
+    background-color: #f1f1f1; /* Lighter gray background on hover */
+}
+/* Reset default browser styles */
+body, input, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Example font */
+}
+
+/* Container for filter elements */
+.filter-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Spacing between filter and next element */
+}
+
+/* Label styling */
+label {
+    margin-right: 10px; /* Space between label and input */
+}
+
+/* Input field styling */
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px;
+    flex: 1; /* Take remaining space */
+}
+
+/* Button styling */
+button {
+    padding: 8px 16px;
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Hover effect on button */
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

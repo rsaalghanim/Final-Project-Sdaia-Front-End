@@ -1,0 +1,42 @@
+
+
+<!-- Filter input -->
+<label for="filterInput"></label>
+<input type="text" id="filterInput" name="filterInput"  [(ngModel)]="searchTerm" (input)="filterByPatientId()" placeholder="Enter Patient ID/Status...">
+<button type="button" (click)="filterByPatientId()">Search</button>
+
+<!-- Display filtered data -->
+<div *ngIf="filteredData.length > 0">
+    <table>
+        <thead>
+        <tr>
+            <th>doctorId</th>
+            <th>patientId</th>
+            <th>requestTime</th>
+            <th>consultationTime</th>
+            <th>status</th>
+            <th>diagnosis</th>
+            <th>rateDoctor</th>
+            <!-- Add more headers as needed -->
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let consultation of filteredData">
+            <td>{{ consultation.doctorId }}</td>
+            <td>{{ consultation.patientId }}</td>
+            <td>{{ consultation.requestTime }}</td>
+            <td>{{ consultation.consultationTime }}</td>
+            <td>{{ consultation.status }}</td>
+            <td>{{ consultation.diagnosis }}</td>
+            <td>{{ consultation.rateDoctor }}</td>
+            <!-- Add more columns as needed -->
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div *ngIf="filteredData.length === 0">
+    No doctors found.
+</div>
+
+
+

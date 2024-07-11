@@ -1,0 +1,36 @@
+
+
+<!-- Filter input -->
+<label for="filterInput"></label>
+<input type="text" id="filterInput" name="filterInput"  [(ngModel)]="searchTerm" (input)="filterByIdOrAval()" placeholder="Enter Doctor ID...">
+<button type="button" (click)="filterByIdOrAval()">Search</button>
+
+<!-- Display filtered data -->
+<div *ngIf="filteredData.length > 0">
+    <table>
+        <thead>
+        <tr>
+<!--            <th>schedulesId</th>-->
+            <th>doctorId</th>
+            <th>startTime</th>
+            <th>endTime</th>
+            <!-- Add more headers as needed -->
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let scheduals of filteredData">
+<!--            <td>{{ scheduals.schedulesId }}</td>-->
+            <td>{{ scheduals.doctorId }}</td>
+            <td>{{ scheduals.startTime }}</td>
+            <td>{{ scheduals.endTime }}</td>
+            <!-- Add more columns as needed -->
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div *ngIf="filteredData.length === 0">
+    No doctors found.
+</div>
+
+
+

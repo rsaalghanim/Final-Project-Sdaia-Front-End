@@ -1,0 +1,25 @@
+
+<div *ngIf="data">
+    <table>
+        <thead>
+        <tr>
+            <th>Patient ID</th>
+            <th> Name</th>
+            <th> Email</th>
+            <th> Password</th>
+            <th> Phone</th>
+            <th>Birthday</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let patient of data">
+            <td>{{ patient.patientId }}</td>
+            <td>{{ patient.name }}</td>
+            <td>{{ patient.email }}</td>
+            <td>{{ patient.password }}</td>
+            <td>{{ patient.phone }}</td>
+            <td>{{ patient.dateOfBirth }}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
